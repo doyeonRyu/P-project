@@ -30,7 +30,7 @@
     left: 0%; /* 화면 왼쪽 */
     width: 500px; /* 너비 */
     height: 650px; /* 높이 */
-    background-image: url('C:/Users/USER/OneDrive - gachon.ac.kr/gachon 3-2/P실무/Legend2.png'); /* 이미지 경로 설정 */
+    background-image: url('../image/Legend2.png'); /* 이미지 경로 설정 */
     background-size: cover; /* 요소 크기에 맞게 이미지 조정 */
     background-repeat: no-repeat; /* 이미지 반복 방지 */
     background-position: center; /* 이미지 중앙 정렬 */
