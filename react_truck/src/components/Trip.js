@@ -146,6 +146,9 @@ const returnAnimationDisplayTime = (time) => {
     "home 17": [126.925151, 37.486567],
     "home 18": [126.925955, 37.486268],
     "home 19": [126.925445, 37.485901],
+  };
+
+  const end_point = {
     "home 20": [126.925938, 37.485551]
   };
 
@@ -205,6 +208,20 @@ const Trip = (props) => {
       getSize: 2,
       getPosition: (d) => d.coordinates,
       getColor: [255, 0, 0], // 빨간색
+      opacity: 1,
+    }),
+
+    // 마지막 정류장
+    new IconLayer({
+      id: "end-point",
+      data: Object.entries(end_point).map(([name, coordinates]) => ({ name, coordinates })),
+      sizeScale: 10,
+      iconAtlas: "https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/icon-atlas.png",
+      iconMapping: ICON_MAPPING,
+      getIcon: () => "marker",
+      getSize: 2,
+      getPosition: (d) => d.coordinates,
+      getColor: [255, 255, 0], // 빨간색
       opacity: 1,
     }),
 
