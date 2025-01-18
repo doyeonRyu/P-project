@@ -76,7 +76,7 @@ const ICON_MAPPING = {
 // mapbox 스타일 변경
 // 최소, 최대 시간 설정 (min ~ max)
 const minTime = 0; // min
-const maxTime = 2200; // max
+const maxTime = 2500; // max
 
 const animationSpeed = 100;
 const mapStyle = "mapbox://styles/spear5306/ckzcz5m8w002814o2coz02sjc";
